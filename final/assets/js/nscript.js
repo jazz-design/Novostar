@@ -14,4 +14,12 @@ document.addEventListener("DOMContentLoaded", function () {
           document.getElementById("footer").innerHTML = data;
       })
       .catch(error => console.error("Error loading footer:", error));
+
+    // Load Mobile Responsive
+    fetch("responsive.html")
+    .then(response => response.text())
+    .then(data => {
+        document.getElementById("responsive").innerHTML = data;
+    })
+    .catch(error => console.error("Error loading footer:", error));
 });
