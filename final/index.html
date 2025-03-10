@@ -8,6 +8,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Novostar Immigration </title>
     <script src="assets/js/nscript.js" defer></script>
+    <script>
+        window.onload = function () {
+            const urlParams = new URLSearchParams(window.location.search);
+            const status = urlParams.get("status");
+            if (status === "success") {
+                document.getElementById("message-box").innerHTML = "<p style='color:green;'>Message sent successfully!</p>";
+            } else if (status === "error") {
+                document.getElementById("message-box").innerHTML = "<p style='color:red;'>Failed to send message. Try again!</p>";
+            } else if (status === "invalid") {
+                document.getElementById("message-box").innerHTML = "<p style='color:red;'>Invalid request!</p>";
+            }
+        };
+    </script>
     <!-- favicons Icons -->
     <link rel="apple-touch-icon" sizes="180x180" href="assets/images/favicons/apple-touch-icon.png" />
     <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicons/favicon-32x32.png" />
@@ -1098,7 +1111,8 @@
                 <div class="col-xl-8 col-lg-7">
                     <div class="contact-two__left">
                         <div class="contact-two__form-box">
-                            <form action="https://bracketweb.com/treck-html/main-html/assets/inc/sendemail.php"
+                            <div id="message-box"></div> 
+                            <form action="contact.php" method="POST"
                                 class="contact-two__form contact-form-validated" novalidate="novalidate">
                                 <div class="row">
                                     <div class="col-xl-6 col-lg-6">
@@ -1118,7 +1132,7 @@
                                     </div>
                                     <div class="col-xl-6 col-lg-6">
                                         <div class="contact-two__form-input-box">
-                                            <select class="selectpicker" aria-label="Default select example">
+                                            <select name="subject" class="selectpicker" aria-label="Default select example">
                                                 <option selected>Visa Type</option>
                                                 <option value="1">Tourist Visa</option>
                                                 <option value="2">Business Visa</option>

@@ -8,6 +8,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Novostar Immigration </title>
     <script src="assets/js/nscript.js" defer></script>
+    <script>
+        window.onload = function () {
+            const urlParams = new URLSearchParams(window.location.search);
+            const status = urlParams.get("status");
+            if (status === "success") {
+                document.getElementById("message-box").innerHTML = "<p style='color:green;'>Message sent successfully!</p>";
+            } else if (status === "error") {
+                document.getElementById("message-box").innerHTML = "<p style='color:red;'>Failed to send message. Try again!</p>";
+            } else if (status === "invalid") {
+                document.getElementById("message-box").innerHTML = "<p style='color:red;'>Invalid request!</p>";
+            }
+        };
+    </script>
     <!-- favicons Icons -->
     <link rel="apple-touch-icon" sizes="180x180" href="assets/images/favicons/apple-touch-icon.png" />
     <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicons/favicon-32x32.png" />
@@ -55,11 +68,6 @@
 
     <div class="custom-cursor__cursor"></div>
     <div class="custom-cursor__cursor-two"></div>
-
-
-
-
-
     <div class="preloader">
         <div class="preloader__image"></div>
     </div>
@@ -104,34 +112,35 @@
                     <h2 class="section-title__title">Feel Free to Get in <br> Touch with us</h2>
                 </div>
                 <div class="contact-five__form-box">
-                    <form action="https://bracketweb.com/treck-html/main-html/assets/inc/sendemail.php" class="contact-five__form contact-form-validated"
-                        novalidate="novalidate">
+                    <div id="message-box"></div> 
+                    <form action="contact.php" class="contact-five__form contact-form-validated"
+                        novalidate="novalidate" method="POST">
                         <div class="row">
                             <div class="col-xl-6">
                                 <div class="contact-five__input-box">
-                                    <input type="text" placeholder="Your Name" name="name">
+                                    <input type="text" placeholder="Your Name" name="name" required>
                                 </div>
                             </div>
                             <div class="col-xl-6">
                                 <div class="contact-five__input-box">
-                                    <input type="email" placeholder="Email Address" name="email">
+                                    <input type="email" placeholder="Email Address" name="email" required>
                                 </div>
                             </div>
                             <div class="col-xl-6">
                                 <div class="contact-five__input-box">
-                                    <input type="text" placeholder="Phone Number" name="Phone">
+                                    <input type="text" placeholder="Phone Number" name="phone">
                                 </div>
                             </div>
                             <div class="col-xl-6">
                                 <div class="contact-five__input-box">
-                                    <input type="text" placeholder="Subject" name="Subject">
+                                    <input type="text" placeholder="Subject" name="subject" required>
                                 </div>
                             </div>
                         </div>
                         <div class="row">
                             <div class="col-xl-12">
                                 <div class="contact-five__input-box text-message-box">
-                                    <textarea name="message" placeholder="Write a Message"></textarea>
+                                    <textarea name="message" placeholder="Write a Message" required></textarea>
                                 </div>
                                 <div class="contact-five__btn-box">
                                     <button type="submit" class="thm-btn contact-five__btn">Send a
