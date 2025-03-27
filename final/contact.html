@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Novostar Immigration </title>
+    <script src="assets/js/nscript.js" defer></script>
+    <script>
+        window.onload = function () {
+            const urlParams = new URLSearchParams(window.location.search);
+            const status = urlParams.get("status");
+            if (status === "success") {
+                document.getElementById("message-box").innerHTML = "<p style='color:green;'>Message sent successfully!</p>";
+            } else if (status === "error") {
+                document.getElementById("message-box").innerHTML = "<p style='color:red;'>Failed to send message. Try again!</p>";
+            } else if (status === "invalid") {
+                document.getElementById("message-box").innerHTML = "<p style='color:red;'>Invalid request!</p>";
+            }
+        };
+    </script>
+    <!-- favicons Icons -->
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/images/favicons/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicons/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicons/favicon-16x16.png" />
+    <link rel="manifest" href="assets/images/favicons/site.webmanifest" />
+    <meta name="description" content="Contact us" />
+
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com/">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&amp;display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="assets/vendors/bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/vendors/animate/animate.min.css" />
+    <link rel="stylesheet" href="assets/vendors/animate/custom-animate.css" />
+    <link rel="stylesheet" href="assets/vendors/fontawesome/css/all.min.css" />
+    <link rel="stylesheet" href="assets/vendors/jarallax/jarallax.css" />
+    <link rel="stylesheet" href="assets/vendors/jquery-magnific-popup/jquery.magnific-popup.css" />
+    <link rel="stylesheet" href="assets/vendors/nouislider/nouislider.min.css" />
+    <link rel="stylesheet" href="assets/vendors/nouislider/nouislider.pips.css" />
+    <link rel="stylesheet" href="assets/vendors/odometer/odometer.min.css" />
+    <link rel="stylesheet" href="assets/vendors/swiper/swiper.min.css" />
+    <link rel="stylesheet" href="assets/vendors/treck-icons/style.css">
+    <link rel="stylesheet" href="assets/vendors/tiny-slider/tiny-slider.min.css" />
+    <link rel="stylesheet" href="assets/vendors/reey-font/stylesheet.css" />
+    <link rel="stylesheet" href="assets/vendors/owl-carousel/owl.carousel.min.css" />
+    <link rel="stylesheet" href="assets/vendors/owl-carousel/owl.theme.default.min.css" />
+    <link rel="stylesheet" href="assets/vendors/bxslider/jquery.bxslider.css" />
+    <link rel="stylesheet" href="assets/vendors/bootstrap-select/css/bootstrap-select.min.css" />
+    <link rel="stylesheet" href="assets/vendors/vegas/vegas.min.css" />
+    <link rel="stylesheet" href="assets/vendors/jquery-ui/jquery-ui.css" />
+    <link rel="stylesheet" href="assets/vendors/timepicker/timePicker.css" />
+    <link rel="stylesheet" href="assets/vendors/language-switcher/polyglot-language-switcher.css" />
+
+    <!-- template styles -->
+    <link rel="stylesheet" href="assets/css/novostar.css" />
+    <link rel="stylesheet" href="assets/css/novostar-responsive.css" />
+</head>
+
+<body class="custom-cursor">
+
+    <div class="custom-cursor__cursor"></div>
+    <div class="custom-cursor__cursor-two"></div>
+    <div class="preloader">
+        <div class="preloader__image"></div>
+    </div>
+    <!-- /.preloader -->
+
+
+    <div class="page-wrapper">
+    <div id="header"></div>
+
+        <div class="stricky-header stricked-menu main-menu main-menu-two">
+            <div class="sticky-header__content"></div><!-- /.sticky-header__content -->
+        </div><!-- /.stricky-header -->
+
+
+        <!--Page Header Start-->
+        <section class="page-header">
+            <div class="page-header-bg" style="background-image: url(assets/images/backgrounds/contact-one-bg.jpg)">
+            </div>
+            <div class="container">
+                <div class="page-header__inner">
+                    <h2>Contact</h2>
+                    <ul class="thm-breadcrumb list-unstyled">
+                        <li><a href="index.html">Home</a></li>
+                        <li><span>-</span></li>
+                        <li class="active">Contact</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <!--Page Header End-->
+
+        <!--Contact Five Start-->
+        <section class="contact-five">
+            <div class="contact-five__bg" style="background-image: url(assets/images/backgrounds/contact-five-bg.png);">
+            </div>
+            <div class="container">
+                <div class="section-title text-center">
+                    <div class="section-title__tagline-box">
+                        <span class="section-title__tagline">contact with us</span>
+                        <div class="section-title__border-box"></div>
+                    </div>
+                    <h2 class="section-title__title">Feel Free to Get in <br> Touch with us</h2>
+                </div>
+                <div class="contact-five__form-box">
+                    <div id="message-box"></div> 
+                    <form action="contact.php" class="contact-five__form contact-form-validated"
+                        novalidate="novalidate" method="POST">
+                        <div class="row">
+                            <div class="col-xl-6">
+                                <div class="contact-five__input-box">
+                                    <input type="text" placeholder="Your Name" name="name" required>
+                                </div>
+                            </div>
+                            <div class="col-xl-6">
+                                <div class="contact-five__input-box">
+                                    <input type="email" placeholder="Email Address" name="email" required>
+                                </div>
+                            </div>
+                            <div class="col-xl-6">
+                                <div class="contact-five__input-box">
+                                    <input type="text" placeholder="Phone Number" name="phone">
+                                </div>
+                            </div>
+                            <div class="col-xl-6">
+                                <div class="contact-five__input-box">
+                                    <input type="text" placeholder="Subject" name="subject" required>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xl-12">
+                                <div class="contact-five__input-box text-message-box">
+                                    <textarea name="message" placeholder="Write a Message" required></textarea>
+                                </div>
+                                <div class="contact-five__btn-box">
+                                    <button type="submit" class="thm-btn contact-five__btn">Send a
+                                        Message</button>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                    <div class="result"></div>
+                </div>
+            </div>
+        </section>
+        <!--Contact Five End-->
+
+        <!--Location One Start-->
+        <section class="location-one">
+            <div class="container">
+                <div class="location-one__top">
+                    <div class="row">
+                        <div class="col-xl-7 col-lg-6">
+                            <div class="location-one__top-left">
+                                <div class="section-title text-left">
+                                    <div class="section-title__tagline-box">
+                                        <span class="section-title__tagline">checkout our location</span>
+                                        <div class="section-title__border-box"></div>
+                                    </div>
+                                    <h2 class="section-title__title">Get In<br>
+                                        Touch with us</h2>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-5 col-lg-6">
+                            <div class="location-one__top-right">
+                                <p class="ocation-one__top-text">There are many variations of passages of available but
+                                    the majority have suffered alteration in some form, by injected hum randomised words
+                                    which don't slightly.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="location-one__bottom">
+                    <div class="location-one__main-tab-box tabs-box">
+                        <ul class="tab-buttons clearfix list-unstyled">
+                            <li data-tab="#south-america" class="tab-btn active-btn"><span>Canada</span></li>
+                            
+                        </ul>
+                        <div class="tabs-content">
+                            <!--tab-->
+                            <div class="tab active-tab" id="south-america">
+                                <div class="location-one__tab-content-box">
+                                    <div class="location-one__tab-content-box-inner">
+                                        <div class="location-one__bg"
+                                            style="background-image: url(assets/images/backgrounds/location-one-bg.png);">
+                                        </div>
+                                        <div class="location-one__tab-content-left">
+                                            <div class="location-one__tab-content-img">
+                                                <img src="assets/images/resources/location-one-tab-content-img-1.jpg"
+                                                    alt="">
+                                            </div>
+                                            <div class="location-one__tab-content-contact">
+                                                <h5 class="location-one__tab-content-contact-title">We’re Always Here
+                                                    for
+                                                    You</h5>
+                                                <ul class="list-unstyled location-one__tab-content-contact-list">
+                                                    <li>
+                                                        <div class="icon">
+                                                            <i class="fas fa-map-marker-alt"></i>
+                                                        </div>
+                                                        <div class="content">
+                                                            <p>Novostar Immigration <br>Unit 263, 7025 Tomken Rd Mississauga, <br> ON L5S 1R6</p>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="icon">
+                                                            <i class="fas fa-envelope"></i>
+                                                        </div>
+                                                        <div class="content">
+                                                            <p><a
+                                                                    href="mailto:needhelp@company.com">info@novostarimmigration.com<br>
+                                                                    contact@novostarimmigration.com</a>
+                                                            </p>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="icon">
+                                                            <i class="fas fa-phone"></i>
+                                                        </div>
+                                                        <div class="content">
+                                                            <p><a href="tel:9288009850 ">+1- 6479960072 </a></p>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                            
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--Location One End-->
+
+        <!--Google Map Two Start-->
+        <section class="google-map-two">
+            
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11544.373465147724!2d-79.684326!3d43.667028!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b3fcd5e06d04b%3A0x6f2ff289fdfa5033!2sNovostar%20Immigration!5e0!3m2!1sen!2sus!4v1739957098158!5m2!1sen!2sus" class="google-map__two"  style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+        </section>
+        <!--Google Map Two End-->
+
+        <!--Site Footer Start-->
+        <div id="footer"></div>
+        <!--Site Footer End-->
+
+
+    </div><!-- /.page-wrapper -->
+
+    <div id="responsive">
+    </div>
+    <!-- /.mobile-nav__wrapper -->
+
+    <div class="search-popup">
+        <div class="search-popup__overlay search-toggler"></div>
+        <!-- /.search-popup__overlay -->
+        <div class="search-popup__content">
+            <form action="#">
+                <label for="search" class="sr-only">search here</label><!-- /.sr-only -->
+                <input type="text" id="search" placeholder="Search Here..." />
+                <button type="submit" aria-label="search submit" class="thm-btn">
+                    <i class="icon-magnifying-glass"></i>
+                </button>
+            </form>
+        </div>
+        <!-- /.search-popup__content -->
+    </div>
+    <!-- /.search-popup -->
+
+    <a href="#" data-target="html" class="scroll-to-target scroll-to-top"><i class="icon-right-arrow"></i></a>
+
+
+    <script src="assets/vendors/jquery/jquery-3.6.4.min.js"></script>
+    <script src="assets/vendors/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendors/jarallax/jarallax.min.js"></script>
+    <script src="assets/vendors/jquery-ajaxchimp/jquery.ajaxchimp.min.js"></script>
+    <script src="assets/vendors/jquery-appear/jquery.appear.min.js"></script>
+    <script src="assets/vendors/jquery-circle-progress/jquery.circle-progress.min.js"></script>
+    <script src="assets/vendors/jquery-magnific-popup/jquery.magnific-popup.min.js"></script>
+    <script src="assets/vendors/jquery-validate/jquery.validate.min.js"></script>
+    <script src="assets/vendors/nouislider/nouislider.min.js"></script>
+    <script src="assets/vendors/odometer/odometer.min.js"></script>
+    <script src="assets/vendors/swiper/swiper.min.js"></script>
+    <script src="assets/vendors/tiny-slider/tiny-slider.min.js"></script>
+    <script src="assets/vendors/wnumb/wNumb.min.js"></script>
+    <script src="assets/vendors/wow/wow.js"></script>
+    <script src="assets/vendors/isotope/isotope.js"></script>
+    <script src="assets/vendors/countdown/countdown.min.js"></script>
+    <script src="assets/vendors/owl-carousel/owl.carousel.min.js"></script>
+    <script src="assets/vendors/bxslider/jquery.bxslider.min.js"></script>
+    <script src="assets/vendors/bootstrap-select/js/bootstrap-select.min.js"></script>
+    <script src="assets/vendors/vegas/vegas.min.js"></script>
+    <script src="assets/vendors/jquery-ui/jquery-ui.js"></script>
+    <script src="assets/vendors/timepicker/timePicker.js"></script>
+    <script src="assets/vendors/circleType/jquery.circleType.js"></script>
+    <script src="assets/vendors/circleType/jquery.lettering.min.js"></script>
+
+
+
+
+    <!-- template js -->
+    <script src="assets/js/novostar.js"></script>
+</body>
+
+
+
+</html>

@@ -1,0 +1,1484 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Novostar Immigration </title>
+    <script src="assets/js/nscript.js" defer></script>
+    <script>
+        window.onload = function () {
+            const urlParams = new URLSearchParams(window.location.search);
+            const status = urlParams.get("status");
+            if (status === "success") {
+                document.getElementById("message-box").innerHTML = "<p style='color:green;'>Message sent successfully!</p>";
+            } else if (status === "error") {
+                document.getElementById("message-box").innerHTML = "<p style='color:red;'>Failed to send message. Try again!</p>";
+            } else if (status === "invalid") {
+                document.getElementById("message-box").innerHTML = "<p style='color:red;'>Invalid request!</p>";
+            }
+        };
+    </script>
+    <!-- favicons Icons -->
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/images/favicons/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicons/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicons/favicon-16x16.png" />
+    <link rel="manifest" href="assets/images/favicons/site.webmanifest" />
+    <meta name="description" content="Novostar Immigration, " />
+
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com/">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&amp;display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="assets/vendors/bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/vendors/animate/animate.min.css" />
+    <link rel="stylesheet" href="assets/vendors/animate/custom-animate.css" />
+    <link rel="stylesheet" href="assets/vendors/fontawesome/css/all.min.css" />
+    <link rel="stylesheet" href="assets/vendors/jarallax/jarallax.css" />
+    <link rel="stylesheet" href="assets/vendors/jquery-magnific-popup/jquery.magnific-popup.css" />
+    <link rel="stylesheet" href="assets/vendors/nouislider/nouislider.min.css" />
+    <link rel="stylesheet" href="assets/vendors/nouislider/nouislider.pips.css" />
+    <link rel="stylesheet" href="assets/vendors/odometer/odometer.min.css" />
+    <link rel="stylesheet" href="assets/vendors/swiper/swiper.min.css" />
+    <link rel="stylesheet" href="assets/vendors/treck-icons/style.css">
+    <link rel="stylesheet" href="assets/vendors/tiny-slider/tiny-slider.min.css" />
+    <link rel="stylesheet" href="assets/vendors/reey-font/stylesheet.css" />
+    <link rel="stylesheet" href="assets/vendors/owl-carousel/owl.carousel.min.css" />
+    <link rel="stylesheet" href="assets/vendors/owl-carousel/owl.theme.default.min.css" />
+    <link rel="stylesheet" href="assets/vendors/bxslider/jquery.bxslider.css" />
+    <link rel="stylesheet" href="assets/vendors/bootstrap-select/css/bootstrap-select.min.css" />
+    <link rel="stylesheet" href="assets/vendors/vegas/vegas.min.css" />
+    <link rel="stylesheet" href="assets/vendors/jquery-ui/jquery-ui.css" />
+    <link rel="stylesheet" href="assets/vendors/timepicker/timePicker.css" />
+    <link rel="stylesheet" href="assets/vendors/language-switcher/polyglot-language-switcher.css" />
+
+    <!-- template styles -->
+    <link rel="stylesheet" href="assets/css/novostar.css" />
+    <link rel="stylesheet" href="assets/css/novostar-responsive.css" />
+</head>
+
+<body class="custom-cursor">
+
+    <div class="custom-cursor__cursor"></div>
+    <div class="custom-cursor__cursor-two"></div>
+
+
+
+
+
+    <div class="preloader">
+        <div class="preloader__image"></div>
+    </div>
+    <!-- /.preloader -->
+
+
+    <div class="page-wrapper">
+        <div id="header"></div>
+
+        <div class="stricky-header stricked-menu main-menu main-menu-two">
+            <div class="sticky-header__content"></div><!-- /.sticky-header__content -->
+        </div><!-- /.stricky-header -->
+
+        <!-- Main Slider Start -->
+        <section class="main-slider-two">
+            <div class="main-slider__carousel owl-carousel owl-theme thm-owl__carousel"
+                data-owl-options='{"loop": true, "items": 1, "navText": ["<span class=\"icon-left-arrow\"></span>","<span class=\"icon-right-arrow\"></span>"], "margin": 0, "dots": true, "nav": true, "animateOut": "slideOutDown", "animateIn": "fadeIn", "active": true, "smartSpeed": 1000, "autoplay": true, "autoplayTimeout": 7000, "autoplayHoverPause": false}'>
+
+                <div class="item main-slider__slide-1">
+                    <div class="main-slider-two__bg"
+                        style="background-image: url(assets/images/backgrounds/slider1.jpg);">
+                    </div><!-- /.slider-one__bg -->
+                    <div class="main-slider-two__shadow"
+                        style="background-image: url(assets/images/shapes/main-slider-two-shadow.png);"></div>
+                    <div class="container">
+                        <div class="main-slider-two__content">
+                            <div class="main-slider-two__shape-1 img-bounce">
+                                <img src="assets/images/shapes/main-slider-two-shape-1.png" alt="">
+                            </div>
+                            <h2 class="main-slider-two__title">Fulfill Your <br>Dream with Novostar
+                               
+                                </h2>
+                            <ul class="list-unstyled main-slider-two__points">
+                                <li>
+                                    <div class="icon">
+                                        <span class="icon-check"></span>
+                                    </div>
+                                    <div class="text">
+                                        <p style="font-size: 26px;">Your Journey to Canada Starts Here!</p>
+                                    </div>
+                                </li>
+                                
+                            </ul>
+                            <div class="main-slider-two__btn-box">
+                                <a href="about.html" class="main-slider-two__btn thm-btn">Discover More</a>
+                            </div>
+                        </div>
+                        <div class="main-slider__feature">
+                            <div class="row">
+                                <!--Main Slider Feature Single Start -->
+                                <div class="col-xl-4 col-lg-4">
+                                    <div class="main-slider__feature-single">
+                                        <div class="main-slider__feature-icon">
+                                            <span class="icon-passport-4"></span>
+                                        </div>
+                                        <div class="main-slider__feature-content">
+                                            <h4 class="main-slider__feature-title"><a href="visa-details.html">Apply for
+                                                    Visa</a></h4>
+                                            <p class="main-slider__feature-text">Fast & hassle-free visa processing. Get expert help today!</p>
+                                        </div>
+                                        <div class="main-slider__feature-arrow">
+                                            <a href="visa-details.html"><span class="icon-down"></span></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--Main Slider Feature Single End -->
+                                <!--Main Slider Feature Single Start -->
+                                <div class="col-xl-4 col-lg-4">
+                                    <div class="main-slider__feature-single">
+                                        <div class="main-slider__feature-icon">
+                                            <span class="icon-immigration"></span>
+                                        </div>
+                                        <div class="main-slider__feature-content">
+                                            <h4 class="main-slider__feature-title"><a
+                                                    href="visa-details.html">Immigration Programs</a>
+                                            </h4>
+                                            <p class="main-slider__feature-text">Find the best immigration options for work, study, or residency.</p>
+                                        </div>
+                                        <div class="main-slider__feature-arrow">
+                                            <a href="visa-details.html"><span class="icon-down"></span></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--Main Slider Feature Single End -->
+                                <!--Main Slider Feature Single Start -->
+                                <div class="col-xl-4 col-lg-4">
+                                    <div class="main-slider__feature-single main-slider__feature-single--3">
+                                        <div class="main-slider__feature-icon">
+                                            <span class="icon-licensing"></span>
+                                        </div>
+                                        <div class="main-slider__feature-content">
+                                            <h4 class="main-slider__feature-title"><a href="visa-details.html">Visa
+                                                    Documents</a></h4>
+                                            <p class="main-slider__feature-text">Get a complete document checklist & expert verification.</p>
+                                        </div>
+                                        <div class="main-slider__feature-arrow">
+                                            <a href="visa-details.html"><span class="icon-down"></span></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--Main Slider Feature Single End -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="item main-slider__slide-2">
+                    <div class="main-slider-two__bg"
+                        style="background-image: url(assets/images/backgrounds/slider2.jpg);">
+                    </div><!-- /.slider-one__bg -->
+                    <div class="main-slider-two__shadow"
+                        style="background-image: url(assets/images/shapes/main-slider-two-shadow.png);"></div>
+                    <div class="container">
+                        <div class="main-slider-two__content">
+                            <div class="main-slider-two__shape-1 img-bounce">
+                                <img src="assets/images/shapes/main-slider-two-shape-1.png" alt="">
+                            </div>
+                            <h2 class="main-slider-two__title">Study Visa & <br>Overseas Education Experts</h2>
+                            <ul class="list-unstyled main-slider-two__points">
+                                <li>
+                                    <div class="icon">
+                                        <span class="icon-check"></span>
+                                    </div>
+                                    <div class="text">
+                                        <p style="font-size: 26px;">Dreaming of Studying in Canada? We Make It Happen!</p>
+                                    </div>
+                                </li>
+                                
+                            </ul>
+                            <div class="main-slider-two__btn-box">
+                                <a href="about.html" class="main-slider-two__btn thm-btn">Discover More</a>
+                            </div>
+                        </div>
+                        <div class="main-slider__feature">
+                            <div class="row">
+                                <!--Main Slider Feature Single Start -->
+                                <div class="col-xl-4 col-lg-4">
+                                    <div class="main-slider__feature-single">
+                                        <div class="main-slider__feature-icon">
+                                            <span class="icon-passport-4"></span>
+                                        </div>
+                                        <div class="main-slider__feature-content">
+                                            <h4 class="main-slider__feature-title"><a href="visa-details.html">Apply for
+                                                    Visa</a></h4>
+                                            <p class="main-slider__feature-text">Fast & hassle-free visa processing. Get expert help today!</p>
+                                        </div>
+                                        <div class="main-slider__feature-arrow">
+                                            <a href="visa-details.html"><span class="icon-down"></span></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--Main Slider Feature Single End -->
+                                <!--Main Slider Feature Single Start -->
+                                <div class="col-xl-4 col-lg-4">
+                                    <div class="main-slider__feature-single">
+                                        <div class="main-slider__feature-icon">
+                                            <span class="icon-immigration"></span>
+                                        </div>
+                                        <div class="main-slider__feature-content">
+                                            <h4 class="main-slider__feature-title"><a
+                                                    href="visa-details.html">Immigration Programs</a>
+                                            </h4>
+                                            <p class="main-slider__feature-text">Find the best immigration options for work, study, or residency.</p>
+                                        </div>
+                                        <div class="main-slider__feature-arrow">
+                                            <a href="visa-details.html"><span class="icon-down"></span></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--Main Slider Feature Single End -->
+                                <!--Main Slider Feature Single Start -->
+                                <div class="col-xl-4 col-lg-4">
+                                    <div class="main-slider__feature-single main-slider__feature-single--3">
+                                        <div class="main-slider__feature-icon">
+                                            <span class="icon-licensing"></span>
+                                        </div>
+                                        <div class="main-slider__feature-content">
+                                            <h4 class="main-slider__feature-title"><a href="visa-details.html">Visa
+                                                    Documents</a></h4>
+                                            <p class="main-slider__feature-text">Get a complete document checklist & expert verification.</p>
+                                        </div>
+                                        <div class="main-slider__feature-arrow">
+                                            <a href="visa-details.html"><span class="icon-down"></span></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--Main Slider Feature Single End -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="item main-slider__slide-1">
+                    <div class="main-slider-two__bg"
+                        style="background-image: url(assets/images/backgrounds/slider3.jpg);">
+                    </div><!-- /.slider-one__bg -->
+                    <div class="main-slider-two__shadow"
+                        style="background-image: url(assets/images/shapes/main-slider-two-shadow.png);"></div>
+                    <div class="container">
+                        <div class="main-slider-two__content">
+                            <div class="main-slider-two__shape-1 img-bounce">
+                                <img src="assets/images/shapes/main-slider-two-shape-1.png" alt="">
+                            </div>
+                            <h2 class="main-slider-two__title">LMIA & PNP <br>Fast Track Your PR</h2>
+                            <ul class="list-unstyled main-slider-two__points">
+                                <li>
+                                    <div class="icon">
+                                        <span class="icon-check"></span>
+                                    </div>
+                                    <div class="text">
+                                        <p style="font-size: 26px;">Work & Settle in Canada with LMIA & PNP!</p>
+                                    </div>
+                                </li>
+                               
+                            </ul>
+                            <div class="main-slider-two__btn-box">
+                                <a href="about.html" class="main-slider-two__btn thm-btn">Discover More</a>
+                            </div>
+                        </div>
+                        <div class="main-slider__feature">
+                            <div class="row">
+                                <!--Main Slider Feature Single Start -->
+                                <div class="col-xl-4 col-lg-4">
+                                    <div class="main-slider__feature-single">
+                                        <div class="main-slider__feature-icon">
+                                            <span class="icon-passport-4"></span>
+                                        </div>
+                                        <div class="main-slider__feature-content">
+                                            <h4 class="main-slider__feature-title"><a href="visa-details.html">Apply for
+                                                    Visa</a></h4>
+                                            <p class="main-slider__feature-text">Fast & hassle-free visa processing. Get expert help today!</p>
+                                        </div>
+                                        <div class="main-slider__feature-arrow">
+                                            <a href="visa-details.html"><span class="icon-down"></span></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--Main Slider Feature Single End -->
+                                <!--Main Slider Feature Single Start -->
+                                <div class="col-xl-4 col-lg-4">
+                                    <div class="main-slider__feature-single">
+                                        <div class="main-slider__feature-icon">
+                                            <span class="icon-immigration"></span>
+                                        </div>
+                                        <div class="main-slider__feature-content">
+                                            <h4 class="main-slider__feature-title"><a
+                                                    href="visa-details.html">Immigration Programs</a>
+                                            </h4>
+                                            <p class="main-slider__feature-text">Find the best immigration options for work, study, or residency.</p>
+                                        </div>
+                                        <div class="main-slider__feature-arrow">
+                                            <a href="visa-details.html"><span class="icon-down"></span></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--Main Slider Feature Single End -->
+                                <!--Main Slider Feature Single Start -->
+                                <div class="col-xl-4 col-lg-4">
+                                    <div class="main-slider__feature-single main-slider__feature-single--3">
+                                        <div class="main-slider__feature-icon">
+                                            <span class="icon-licensing"></span>
+                                        </div>
+                                        <div class="main-slider__feature-content">
+                                            <h4 class="main-slider__feature-title"><a href="visa-details.html">Visa
+                                                    Documents</a></h4>
+                                            <p class="main-slider__feature-text">Get a complete document checklist & expert verification.</p>
+                                        </div>
+                                        <div class="main-slider__feature-arrow">
+                                            <a href="visa-details.html"><span class="icon-down"></span></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--Main Slider Feature Single End -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <!--Main Slider Start -->
+
+        <!--About Two Start -->
+        <section class="about-two">
+            <div class="about-two__shape-2 img-bounce">
+                <img src="assets/images/shapes/about-two-shape-2.png" alt="">
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-6">
+                        <div class="about-two__left">
+                            <div class="about-two__img-box">
+                                <div class="about-two__img">
+                                    <img src="assets/images/backgrounds/about1.jpg" alt="">
+                                </div>
+                                <div class="about-two__experience">
+                                    <div class="about-two__experience-inner count-box">
+                                        <h3 class="count-text" data-stop="04" data-speed="1500">00</h3>
+                                        <p>Years of Experience</p>
+                                        <div class="about-two__shape-1">
+                                            <img src="assets/images/shapes/about-two-shape-1.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-6">
+                        <div class="about-two__right">
+                            <div class="section-title text-left">
+                                <div class="section-title__tagline-box">
+                                    <span class="section-title__tagline">Novostar Immigration</span>
+                                    <div class="section-title__border-box"></div>
+                                </div>
+                                <h2 class="section-title__title">Providing the Best Visa
+                                    Services to Clients</h2>
+                            </div>
+                            <p class="about-two__text">Novostar has a well established team comprising of International counselors to provide accurate advice about University and Courses.
+                                 We are a professionally managed education and immigration consulting group and having very vast experience in our field of more than 15 years.</p>
+                            <ul class="about-two__points list-unstyled">
+                                <li>
+                                    <div class="icon">
+                                        <span class="icon-check"></span>
+                                    </div>
+                                    <div class="text">
+                                        <p>Ready to Help <br> You in Immigration</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="icon">
+                                        <span class="icon-check"></span>
+                                    </div>
+                                    <div class="text">
+                                        <p>Works Fast & We’re
+                                            <br> Cost Effective</p>
+                                    </div>
+                                </li>
+                            </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </section>
+        <!--About Two Start -->
+
+        <!--Excellence One Start -->
+        <section class="excellence-one">
+            <div class="container">
+                <div class="excellence-one__inner">
+                    <div class="excellence-one__bg"
+                        style="background-image: url(assets/images/backgrounds/excellence-one-bg.png);"></div>
+                    <div class="excellence-one__shape-1 img-bounce">
+                        <img src="assets/images/shapes/excellence-one-shape-1.png" alt="">
+                    </div>
+                    <div class="excellence-one__shape-2 float-bob-x">
+                        <img src="assets/images/shapes/excellence-one-shape-2.png" alt="">
+                    </div>
+                    <h3 class="excellence-one__title">Excellence
+                        <br> in Visa & Immigration</h3>
+                    <div class="excellence-one__btn-box">
+                        <a href="visa-details.html" class="excellence-one__btn thm-btn">Apply for Visa</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--Excellence One End -->
+
+         <!--Video One Start-->
+         <section class="video-one">
+            <div class="video-one__bg" data-jarallax data-speed="0.2" data-imgPosition="50% 0%"
+                style="background-image: url(assets/images/backgrounds/video-one-bg.jpg);"></div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-5 col-lg-6">
+                        <div class="video-one__left">
+                            <div class="section-title text-left">
+                                <div class="section-title__tagline-box">
+                                    <span class="section-title__tagline">get our support</span>
+                                    <div class="section-title__border-box"></div>
+                                </div>
+                                <h2 class="section-title__title">Most Trusted Visa &
+                                    Immigration</h2>
+                            </div>
+                            <ul class="video-one__points list-unstyled">
+                                <li>
+                                    <div class="icon">
+                                        <span class="icon-check"></span>
+                                    </div>
+                                    <div class="text">
+                                        <p>Fast Visa Process</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="icon">
+                                        <span class="icon-check"></span>
+                                    </div>
+                                    <div class="text">
+                                        <p>Get Country Citizenship</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="icon">
+                                        <span class="icon-check"></span>
+                                    </div>
+                                    <div class="text">
+                                        <p>Help in Documentation</p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-xl-7 col-lg-6">
+                        <div class="video-one__right">
+                            <div class="video-one__video-link">
+                                <a href="https://www.youtube.com/watch?v=Get7rqXYrbQ" class="video-popup">
+                                    <div class="video-one__video-icon">
+                                        <span class="fa fa-play"></span>
+                                        <i class="ripple"></i>
+                                    </div>
+                                </a>
+                                <div class="video-one__shape-1 float-bob-x">
+                                    <img src="assets/images/shapes/video-one-shape-1.png" alt="">
+                                </div>
+                            </div>
+                            <p class="video-one__text">Learn how to get your visa approved quickly. Watch now!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--Video One End-->
+
+        <!--Counter One Start-->
+        <section class="counter-one">
+            <div class="counter-one__bg" style="background-image: url(assets/images/backgrounds/counter-one-bg.png);">
+            </div>
+            <div class="container">
+                <div class="row">
+                    <!--Counter One Single Start-->
+                    <div class="col-xl-3 col-lg-6 col-md-6">
+                        <div class="counter-one__single">
+                            <div class="counter-one__icon">
+                                <span class="icon-passport-4"></span>
+                            </div>
+                            <div class="counter-one__content">
+                                <div class="counter-one__count-box count-box">
+                                    <h3 class="count-text" data-stop="100" data-speed="1500">00</h3>
+                                    <span class="counter-two__plus">+</span>
+                                </div>
+                                <p>Visa Issued</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Counter One Single End-->
+                    <!--Counter One Single Start-->
+                    <div class="col-xl-3 col-lg-6 col-md-6">
+                        <div class="counter-one__single">
+                            <div class="counter-one__icon">
+                                <span class="icon-life-insurance"></span>
+                            </div>
+                            <div class="counter-one__content">
+                                <div class="counter-one__count-box count-box">
+                                    <h3 class="count-text" data-stop="5000" data-speed="1500">00</h3>
+                                    <span class="counter-two__plus">k</span>
+                                </div>
+                                <p>University Students</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Counter One Single End-->
+                    <!--Counter One Single Start-->
+                    <div class="col-xl-3 col-lg-6 col-md-6">
+                        <div class="counter-one__single">
+                            <div class="counter-one__icon">
+                                <span class="icon-success"></span>
+                            </div>
+                            <div class="counter-one__content">
+                                <div class="counter-one__count-box count-box">
+                                    <h3 class="count-text" data-stop="99" data-speed="1500">00</h3>
+                                    <span class="counter-two__plus">+</span>
+                                </div>
+                                <p>Success Rate</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Counter One Single End-->
+                    <!--Counter One Single Start-->
+                    <div class="col-xl-3 col-lg-6 col-md-6">
+                        <div class="counter-one__single">
+                            <div class="counter-one__icon">
+                                <span class="icon-group"></span>
+                            </div>
+                            <div class="counter-one__content">
+                                <div class="counter-one__count-box count-box">
+                                    <h3 class="count-text" data-stop="10" data-speed="1500">00</h3>
+                                    <span class="counter-two__plus">+</span>
+                                </div>
+                                <p>Expert Professionals</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Counter One Single End-->
+                </div>
+            </div>
+        </section>
+        <!--Counter One End-->
+
+        <!--Coaching One Start-->
+        <section class="coaching-one">
+            <div class="coaching-one__top">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xl-7 col-lg-6">
+                            <div class="coaching-one__left">
+                                <div class="section-title text-left">
+                                    <div class="section-title__tagline-box">
+                                        <span class="section-title__tagline">Services we offer</span>
+                                        <div class="section-title__border-box"></div>
+                                    </div>
+                                    <h2 class="section-title__title">Get the Best Services
+                                        <br>you Deserve</h2>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-5 col-lg-6">
+                            <div class="coaching-one__right">
+                                <p class="coaching-one__text">There are many variations of passages of available but the
+                                    majority have suffered alteration in some form, by injected hum randomised words
+                                    which
+                                    don't slightly.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="coaching-one__bottom">
+                <div class="container">
+                    <div class="row">
+                        <!--Coaching One Single Start-->
+                        <div class="col-xl-3 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="100ms">
+                            <div class="coaching-one__single">
+                                <div class="coaching-one__img-box">
+                                    <div class="coaching-one__img">
+                                        <img src="assets/images/backgrounds/services1.jpg" alt="">
+                                    </div>
+                                    <div class="coaching-one__content">
+                                        <div class="coaching-one__shape-1">
+                                            <img src="assets/images/.png" alt="">
+                                        </div>
+                                        <h3 class="coaching-one__title"><a href="coaching-details.html">Express Entry</a></h3>
+                                        <div class="coaching-one__arrow-box">
+                                            <a href="coaching-details.html" class="coaching-one__arrow"><i
+                                                    class="icon-up-right"></i></a>
+                                        </div>
+                                    </div>
+                                    <div class="coaching-one__hover-content">
+                                        <div class="coaching-one__hover-shape-1"></div>
+                                        <div class="coaching-one__hover-icon">
+                                            <img src="assets/images/icon/coaching-one-hover-icon.png" alt="">
+                                        </div>
+                                        <h3 class="coaching-one__hover-title"><a
+                                                href="coaching-details.html">Express Entry</a></h3>
+                                        <p class="coaching-one__hover-text">Express Entry is an online system used to manage immigration applications from skilled workers.</p><br>
+                                        <div class="coaching-one__hover-arrow-box">
+                                            <a href="coaching-details.html" class="coaching-one__hover-arrow"><i
+                                                    class="icon-down"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Coaching One Single End-->
+                        <!--Coaching One Single Start-->
+                        <div class="col-xl-3 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="200ms">
+                            <div class="coaching-one__single">
+                                <div class="coaching-one__img-box">
+                                    <div class="coaching-one__img">
+                                        <img src="assets/images/backgrounds/services2.jpg" alt="">
+                                    </div>
+                                    <div class="coaching-one__content">
+                                        <div class="coaching-one__shape-1">
+                                            <img src="assets/images/shapes/coaching-one-shape-1.png" alt="">
+                                        </div>
+                                        <h3 class="coaching-one__title"><a href="coaching-details.html">LMIA Service</a></h3>
+                                        <div class="coaching-one__arrow-box">
+                                            <a href="coaching-details.html" class="coaching-one__arrow"><i
+                                                    class="icon-up-right"></i></a>
+                                        </div>
+                                    </div>
+                                    <div class="coaching-one__hover-content">
+                                        <div class="coaching-one__hover-shape-1"></div>
+                                        <div class="coaching-one__hover-icon">
+                                            <img src="assets/images/icon/coaching-one-hover-icon.png" alt="">
+                                        </div>
+                                        <h3 class="coaching-one__hover-title"><a href="coaching-details.html">LMIA Service</a></h3>
+                                        <p class="coaching-one__hover-text">A Labour Market Impact Assessment (LMIA) is a document that an employer may need to get before hiring a foreign worker.</p>
+                                        <div class="coaching-one__hover-arrow-box">
+                                            <a href="coaching-details.html" class="coaching-one__hover-arrow"><i
+                                                    class="icon-down"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Coaching One Single End-->
+                        <!--Coaching One Single Start-->
+                        <div class="col-xl-3 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="300ms">
+                            <div class="coaching-one__single">
+                                <div class="coaching-one__img-box">
+                                    <div class="coaching-one__img">
+                                        <img src="assets/images/backgrounds/services3.jpg" alt="">
+                                    </div>
+                                    <div class="coaching-one__content">
+                                        <div class="coaching-one__shape-1">
+                                            <img src="assets/images/shapes/coaching-one-shape-1.png" alt="">
+                                        </div>
+                                        <h3 class="coaching-one__title"><a href="coaching-details.html">Study Visa</a></h3>
+                                        <div class="coaching-one__arrow-box">
+                                            <a href="coaching-details.html" class="coaching-one__arrow"><i
+                                                    class="icon-up-right"></i></a>
+                                        </div>
+                                    </div>
+                                    <div class="coaching-one__hover-content">
+                                        <div class="coaching-one__hover-shape-1"></div>
+                                        <div class="coaching-one__hover-icon">
+                                            <img src="assets/images/icon/coaching-one-hover-icon.png" alt="">
+                                        </div>
+                                        <h3 class="coaching-one__hover-title"><a href="coaching-details.html">Study Visa</a></h3>
+                                        <p class="coaching-one__hover-text">Canada has many working programs for students and for their partners staying with them in the country.</p>
+                                        <div class="coaching-one__hover-arrow-box">
+                                            <a href="coaching-details.html" class="coaching-one__hover-arrow"><i
+                                                    class="icon-down"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Coaching One Single End-->
+                        <!--Coaching One Single Start-->
+                        <div class="col-xl-3 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="400ms">
+                            <div class="coaching-one__single">
+                                <div class="coaching-one__img-box">
+                                    <div class="coaching-one__img">
+                                        <img src="assets/images/backgrounds/services4.jpg" alt="">
+                                    </div>
+                                    <div class="coaching-one__content">
+                                        <div class="coaching-one__shape-1">
+                                            <img src="assets/images/shapes/coaching-one-shape-1.png" alt="">
+                                        </div>
+                                        <h3 class="coaching-one__title"><a href="coaching-details.html">PNP Program</a>
+                                        </h3>
+                                        <div class="coaching-one__arrow-box">
+                                            <a href="coaching-details.html" class="coaching-one__arrow"><i
+                                                    class="icon-up-right"></i></a>
+                                        </div>
+                                    </div>
+                                    <div class="coaching-one__hover-content">
+                                        <div class="coaching-one__hover-shape-1"></div>
+                                        <div class="coaching-one__hover-icon">
+                                            <img src="assets/images/icon/coaching-one-hover-icon.png" alt="">
+                                        </div>
+                                        <h3 class="coaching-one__hover-title"><a href="coaching-details.html">PNP Program</a></h3>
+                                        <p class="coaching-one__hover-text">Provincial Nominee Program was launched in 1998. This is the leading way to immigrate to Canada as a skilled worker.</p>
+                                        <div class="coaching-one__hover-arrow-box">
+                                            <a href="coaching-details.html" class="coaching-one__hover-arrow"><i
+                                                    class="icon-down"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Coaching One Single End-->
+                    </div>
+                </div>
+            </div>
+
+            <div class="coaching-one__bottom">
+                <div class="container">
+                    <div class="row">
+                        <!--Coaching One Single Start-->
+                        <div class="col-xl-3 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="100ms">
+                            <div class="coaching-one__single">
+                                <div class="coaching-one__img-box">
+                                    <div class="coaching-one__img">
+                                        <img src="assets/images/backgrounds/services5.jpg" alt="">
+                                    </div>
+                                    <div class="coaching-one__content">
+                                        <div class="coaching-one__shape-1">
+                                            <img src="assets/images/shapes/coaching-one-shape-1.png" alt="">
+                                        </div>
+                                        <h3 class="coaching-one__title"><a href="coaching-details.html">Citizenship</a></h3>
+                                        <div class="coaching-one__arrow-box">
+                                            <a href="coaching-details.html" class="coaching-one__arrow"><i
+                                                    class="icon-up-right"></i></a>
+                                        </div>
+                                    </div>
+                                    <div class="coaching-one__hover-content">
+                                        <div class="coaching-one__hover-shape-1"></div>
+                                        <div class="coaching-one__hover-icon">
+                                            <img src="assets/images/icon/coaching-one-hover-icon.png" alt="">
+                                        </div>
+                                        <h3 class="coaching-one__hover-title"><a
+                                                href="coaching-details.html">Citizenship</a></h3>
+                                        <p class="coaching-one__hover-text">The online citizenship application system is a digital platform designed to manage citizenship applications from eligible residents
+                                        </p>
+                                        <div class="coaching-one__hover-arrow-box">
+                                            <a href="coaching-details.html" class="coaching-one__hover-arrow"><i
+                                                    class="icon-down"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Coaching One Single End-->
+                        <!--Coaching One Single Start-->
+                        <div class="col-xl-3 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="200ms">
+                            <div class="coaching-one__single">
+                                <div class="coaching-one__img-box">
+                                    <div class="coaching-one__img">
+                                        <img src="assets/images/backgrounds/services6.jpg" alt="">
+                                    </div>
+                                    <div class="coaching-one__content">
+                                        <div class="coaching-one__shape-1">
+                                            <img src="assets/images/shapes/coaching-one-shape-1.png" alt="">
+                                        </div>
+                                        <h3 class="coaching-one__title"><a href="coaching-details.html">Work Permit</a></h3>
+                                        <div class="coaching-one__arrow-box">
+                                            <a href="coaching-details.html" class="coaching-one__arrow"><i
+                                                    class="icon-up-right"></i></a>
+                                        </div>
+                                    </div>
+                                    <div class="coaching-one__hover-content">
+                                        <div class="coaching-one__hover-shape-1"></div>
+                                        <div class="coaching-one__hover-icon">
+                                            <img src="assets/images/icon/coaching-one-hover-icon.png" alt="">
+                                        </div>
+                                        <h3 class="coaching-one__hover-title"><a href="coaching-details.html">Work Permit</a></h3>
+                                        <p class="coaching-one__hover-text">Work permit application system streamlines the process for foreign workers to apply for authorization to work in the country.</p>
+                                        <div class="coaching-one__hover-arrow-box">
+                                            <a href="coaching-details.html" class="coaching-one__hover-arrow"><i
+                                                    class="icon-down"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Coaching One Single End-->
+                        <!--Coaching One Single Start-->
+                        <div class="col-xl-3 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="300ms">
+                            <div class="coaching-one__single">
+                                <div class="coaching-one__img-box">
+                                    <div class="coaching-one__img">
+                                        <img src="assets/images/backgrounds/services7.jpg" alt="">
+                                    </div>
+                                    <div class="coaching-one__content">
+                                        <div class="coaching-one__shape-1">
+                                            <img src="assets/images/shapes/coaching-one-shape-1.png" alt="">
+                                        </div>
+                                        <h3 class="coaching-one__title"><a href="coaching-details.html">Visitor/ Super Visa</a></h3>
+                                        <div class="coaching-one__arrow-box">
+                                            <a href="coaching-details.html" class="coaching-one__arrow"><i
+                                                    class="icon-up-right"></i></a>
+                                        </div>
+                                    </div>
+                                    <div class="coaching-one__hover-content">
+                                        <div class="coaching-one__hover-shape-1"></div>
+                                        <div class="coaching-one__hover-icon">
+                                            <img src="assets/images/icon/coaching-one-hover-icon.png" alt="">
+                                        </div>
+                                        <h3 class="coaching-one__hover-title"><a href="coaching-details.html">Visitor/ Super Visa</a></h3>
+                                        <p class="coaching-one__hover-text">Canada offers various programs for visitors, including the visitor visa and super visa, allowing extended stays for tourists and family members
+                                        </p>
+                                        <div class="coaching-one__hover-arrow-box">
+                                            <a href="coaching-details.html" class="coaching-one__hover-arrow"><i
+                                                    class="icon-down"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Coaching One Single End-->
+                        <!--Coaching One Single Start-->
+                        <div class="col-xl-3 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="400ms">
+                            <div class="coaching-one__single">
+                                <div class="coaching-one__img-box">
+                                    <div class="coaching-one__img">
+                                        <img src="assets/images/backgrounds/services8.jpg" alt="">
+                                    </div>
+                                    <div class="coaching-one__content">
+                                        <div class="coaching-one__shape-1">
+                                            <img src="assets/images/shapes/coaching-one-shape-1.png" alt="">
+                                        </div>
+                                        <h3 class="coaching-one__title"><a href="coaching-details.html">Business/Startup visa</a>
+                                        </h3>
+                                        <div class="coaching-one__arrow-box">
+                                            <a href="coaching-details.html" class="coaching-one__arrow"><i
+                                                    class="icon-up-right"></i></a>
+                                        </div>
+                                    </div>
+                                    <div class="coaching-one__hover-content">
+                                        <div class="coaching-one__hover-shape-1"></div>
+                                        <div class="coaching-one__hover-icon">
+                                            <img src="assets/images/icon/coaching-one-hover-icon.png" alt="">
+                                        </div>
+                                        <h3 class="coaching-one__hover-title"><a href="coaching-details.html">Business/Startup visa</a></h3>
+                                        <p class="coaching-one__hover-text">Canada provides business visa and start-up visa programs designed to attract entrepreneurs and investors.</p>
+                                        <div class="coaching-one__hover-arrow-box">
+                                            <a href="coaching-details.html" class="coaching-one__hover-arrow"><i
+                                                    class="icon-down"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Coaching One Single End-->
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--Coaching One End-->
+
+        <!--Process One Start-->
+        <section class="process-one">
+            <div class="process-one__bg" style="background-image: url(assets/images/backgrounds/process-one-bg.png);">
+            </div>
+            <div class="container">
+                <div class="section-title text-center">
+                    <div class="section-title__tagline-box">
+                        <span class="section-title__tagline">3 easy process steps</span>
+                        <div class="section-title__border-box"></div>
+                    </div>
+                    <h2 class="section-title__title">Get your Visa in 03 Easy
+                        <br> & Simple Steps</h2>
+                </div>
+                <div class="row">
+                    <!--Process One Single Start-->
+                    <div class="col-xl-4 col-lg-4">
+                        <div class="process-one__single">
+                            <div class="process-one__icon-box">
+                                <div class="process-one__shape-1">
+                                    <img src="assets/images/shapes/process-one-shape-1.png" alt="">
+                                    <div class="process-one__shape-3">
+                                        <img src="assets/images/shapes/process-one-shape-3.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="process-one__shape-2">
+                                    <img src="assets/images/shapes/process-one-shape-2.png" alt="">
+                                </div>
+                                <div class="process-one__icon">
+                                    <span class="icon-success-1"></span>
+                                </div>
+                            </div>
+                            <div class="process-one__content">
+                                <div class="process-one__step">
+                                    <p>Step</p>
+                                    <div class="process-one__count"></div>
+                                </div>
+                                <h3 class="process-one__title"><a href="about.html">Complete
+                                        <br> Online Form</a></h3>
+                                <p class="process-one__text">Fill out our simple online application in just a few minutes.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Process One Single End-->
+                    <!--Process One Single Start-->
+                    <div class="col-xl-4 col-lg-4">
+                        <div class="process-one__single">
+                            <div class="process-one__icon-box">
+                                <div class="process-one__shape-1">
+                                    <img src="assets/images/shapes/process-one-shape-1.png" alt="">
+                                    <div class="process-one__shape-3">
+                                        <img src="assets/images/shapes/process-one-shape-3.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="process-one__shape-2">
+                                    <img src="assets/images/shapes/process-one-shape-2.png" alt="">
+                                </div>
+                                <div class="process-one__icon">
+                                    <span class="icon-document"></span>
+                                </div>
+                            </div>
+                            <div class="process-one__content">
+                                <div class="process-one__step">
+                                    <p>Step</p>
+                                    <div class="process-one__count"></div>
+                                </div>
+                                <h3 class="process-one__title"><a href="about.html">Documents
+                                        <br> and Payments</a></h3>
+                                <p class="process-one__text">Upload the required documents and make a secure payment.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Process One Single End-->
+                    <!--Process One Single Start-->
+                    <div class="col-xl-4 col-lg-4">
+                        <div class="process-one__single">
+                            <div class="process-one__icon-box">
+                                <div class="process-one__shape-1">
+                                    <img src="assets/images/shapes/process-one-shape-1.png" alt="">
+                                    <div class="process-one__shape-3">
+                                        <img src="assets/images/shapes/process-one-shape-3.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="process-one__shape-2">
+                                    <img src="assets/images/shapes/process-one-shape-2.png" alt="">
+                                </div>
+                                <div class="process-one__icon">
+                                    <span class="icon-visa"></span>
+                                </div>
+                            </div>
+                            <div class="process-one__content">
+                                <div class="process-one__step">
+                                    <p>Step</p>
+                                    <div class="process-one__count"></div>
+                                </div>
+                                <h3 class="process-one__title"><a href="about.html">Receive now
+                                        <br> your Visa</a></h3>
+                                <p class="process-one__text">Get your approved visa delivered hassle-free!</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Process One Single End-->
+                </div>
+            </div>
+        </section>
+        <!--Process One End-->
+<!--FAQ One Start -->
+<section class="faq-one">
+    <div class="faq-one__shape-1 float-bob-y">
+        <img src="assets/images/shapes/faq-one-shape-1.png" alt="">
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-xl-6">
+                <div class="faq-one__left">
+                    <div class="faq-one__bg"
+                        style="background-image: url(assets/images/backgrounds/faq-one-bg.jpg);"></div>
+                    <div class="faq-one__inner">
+                        <div class="faq-one__icon">
+                            <span class="icon-deal"></span>
+                        </div>
+                        <h3 class="faq-one__title">Most Trusted Visa
+                            & Immigration
+                            Agency!</h3>
+                        <div class="faq-one__btn-box">
+                            <a href="about.html" class="faq-one__btn thm-btn">Discover More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-6">
+                <div class="faq-one__right">
+                    <div class="section-title text-left">
+                        <div class="section-title__tagline-box">
+                            <span class="section-title__tagline">common faqs</span>
+                            <div class="section-title__border-box"></div>
+                        </div>
+                        <h2 class="section-title__title">Frequently Asked
+                            Questions?</h2>
+                    </div>
+                    <div class="faq-one__faq-box">
+                        <div class="accrodion-grp" data-grp-name="faq-one-accrodion">
+                            <div class="accrodion">
+                                <div class="accrodion-title">
+                                    <h4>What is a Direct Immigration Services?</h4>
+                                </div>
+                                <div class="accrodion-content">
+                                    <div class="inner">
+                                        <p>There are many variations of passages the majority have suffered
+                                            alteration in some fo injected humour, or randomised words
+                                            believable.
+                                        </p>
+                                    </div><!-- /.inner -->
+                                </div>
+                            </div>
+                            <div class="accrodion active">
+                                <div class="accrodion-title">
+                                    <h4>What are the Benefits of Visa Consultancy?</h4>
+                                </div>
+                                <div class="accrodion-content">
+                                    <div class="inner">
+                                        <p>There are many variations of passages the majority have suffered
+                                            alteration in some fo injected humour, or randomised words
+                                            believable.
+                                        </p>
+                                    </div><!-- /.inner -->
+                                </div>
+                            </div>
+                            <div class="accrodion">
+                                <div class="accrodion-title">
+                                    <h4>What We should do If our Visa get Rejection?</h4>
+                                </div>
+                                <div class="accrodion-content">
+                                    <div class="inner">
+                                        <p>There are many variations of passages the majority have suffered
+                                            alteration in some fo injected humour, or randomised words
+                                            believable.
+                                        </p>
+                                    </div><!-- /.inner -->
+                                </div>
+                            </div>
+                            <div class="accrodion">
+                                <div class="accrodion-title">
+                                    <h4>Which Documents are Required to Apply Visa Online?</h4>
+                                </div>
+                                <div class="accrodion-content">
+                                    <div class="inner">
+                                        <p>There are many variations of passages the majority have suffered
+                                            alteration in some fo injected humour, or randomised words
+                                            believable.
+                                        </p>
+                                    </div><!-- /.inner -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--FAQ One End-->
+
+  
+
+    
+  <!--Contact Two Start-->
+  <section class="contact-two">
+    <div class="contact-two__bg" style="background-image: url(assets/images/backgrounds/contact-two-bg.png);">
+    </div>
+    <div class="container">
+        <div class="section-title text-center">
+            <div class="section-title__tagline-box">
+                <span class="section-title__tagline">Contact with us</span>
+                <div class="section-title__border-box"></div>
+            </div>
+            <h2 class="section-title__title">Contact Novostar for Visa & Immigration</h2>
+        </div>
+        <div class="contact-two__inner">
+            <div class="row">
+                <div class="col-xl-8 col-lg-7">
+                    <div class="contact-two__left">
+                        <div class="contact-two__form-box">
+                            <div id="message-box"></div> 
+                            <form action="contact.php" method="POST"
+                                class="contact-two__form contact-form-validated" novalidate="novalidate">
+                                <div class="row">
+                                    <div class="col-xl-6 col-lg-6">
+                                        <div class="contact-two__form-input-box">
+                                            <input type="text" placeholder="Full Name" name="name">
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-6 col-lg-6">
+                                        <div class="contact-two__form-input-box">
+                                            <input type="email" placeholder="Email Address" name="email">
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-6 col-lg-6">
+                                        <div class="contact-two__form-input-box">
+                                            <input type="text" placeholder="Phone" name="phone">
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-6 col-lg-6">
+                                        <div class="contact-two__form-input-box">
+                                            <select name="subject" class="selectpicker" aria-label="Default select example">
+                                                <option selected>Visa Type</option>
+                                                <option value="1">Tourist Visa</option>
+                                                <option value="2">Business Visa</option>
+                                                <option value="3">Student Visa</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-xl-12">
+                                        <div class="contact-two__form-input-box text-message-box">
+                                            <textarea name="message" placeholder="Write a Message"></textarea>
+                                        </div>
+                                        <div class="contact-two__form-btn-box">
+                                            <button type="submit" class="thm-btn contact-two__form-btn">Send a
+                                                Message</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                            <div class="result"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-5">
+                    <div class="contact-two__right">
+                        <div class="contact-two__address-box">
+                            <div class="contact-two__address-top">
+                                <div class="contact-two__address-top-title">
+                                    <h3>Novostar Immigration</h3>
+                                </div>
+                                <div class="contact-two__address-top-icon">
+                                    <span class="icon-buildings"></span>
+                                </div>
+                            </div>
+                            <div class="contact-two__address-faq">
+                                <div class="accrodion-grp" data-grp-name="faq-one-accrodion">
+                                    <div class="accrodion active">
+                                        <div class="accrodion-title">
+                                            <h4>Canada Office</h4>
+                                        </div>
+                                        <div class="accrodion-content">
+                                            <div class="inner">
+                                                <ul class="contact-two__address-list list-unstyled">
+                                                    <li>
+                                                        <div class="icon">
+                                                            <i class="fas fa-map-marker-alt"></i>
+                                                        </div>
+                                                        <div class="text">
+                                                            <p>Unit 263, 7025 Tomken Rd Mississauga, ON L5S 1R6</p>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="icon">
+                                                            <i class="fas fa-envelope"></i>
+                                                        </div>
+                                                        <div class="text">
+                                                            <p><a
+                                                                    href="mailto:contact@novostarimmigration.com"> contact@novostarimmigration.com</a>
+                                                            </p>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="icon">
+                                                            <i class="fas fa-phone"></i>
+                                                        </div>
+                                                        <div class="text">
+                                                            <p><a href="tel:6479960072">+1-6479960072</a>
+                                                            </p>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </div><!-- /.inner -->
+                                        </div>
+                                    </div>
+                                   
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--Contact Two End-->
+    <!--Testimonial Two Start-->
+    <section class="testimonial-two">
+        <div class="container">
+            <div class="testimonial-two__top">
+                <div class="row">
+                    <div class="col-xl-7 col-lg-6">
+                        <div class="testimonial-two__left">
+                            <div class="section-title text-left">
+                                <div class="section-title__tagline-box">
+                                    <span class="section-title__tagline">Our feedbacks</span>
+                                    <div class="section-title__border-box"></div>
+                                </div>
+                                <h2 class="section-title__title">What They’re
+                                    <br> Talking About Treck</h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-5 col-lg-6">
+                        <div class="testimonial-two__right">
+                            <p class="testimonial-two__right-text">There are many variations of passages of
+                                available but
+                                the majority have suffered alteration in some form, by injected hum randomised words
+                                which don't slightly.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial-two__bottom">
+                <div class="testimonial-two__carousel owl-carousel owl-theme thm-owl__carousel" data-owl-options='{
+                    "loop": true,
+                    "autoplay": true,
+                    "margin": 30,
+                    "nav": false,
+                    "dots": false,
+                    "smartSpeed": 500,
+                    "autoplayTimeout": 10000,
+                    "navText": ["<span class=\"icon-right-arrow\"></span>","<span class=\"icon-right-arrow\"></span>"],
+                    "responsive": {
+                        "0": {
+                            "items": 1
+                        },
+                        "768": {
+                            "items": 1
+                        },
+                        "992": {
+                            "items": 2
+                        },
+                        "1200": {
+                            "items": 2
+                        }
+                    }
+                }'>
+                    <!--Testimonial Two Single Start-->
+                    <div class="item">
+                        <div class="testimonial-two__single">
+                            <div class="testimonial-two__inner">
+                                <div class="testimonial-two__img">
+                                    <img src="assets/images/testimonial/testimonial-2-1.jpg" alt="">
+                                    <div class="testimonial-two__shape-1">
+                                        <img src="assets/images/shapes/testimonial-two-shape-1.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="testimonial-two__client-details-and-quote">
+                                    <div class="testimonial-two__client-details">
+                                        <div class="testimonial-two__client-rate">
+                                            <span class="fa fa-star"></span>
+                                            <span class="fa fa-star"></span>
+                                            <span class="fa fa-star"></span>
+                                            <span class="fa fa-star"></span>
+                                            <span class="fa fa-star"></span>
+                                        </div>
+                                        <h4 class="testimonial-two__client-name"><a
+                                                href="story-details.html">Sarah Albert</a></h4>
+                                        <p class="testimonial-two__client-sub-title">Student</p>
+                                    </div>
+                                    <div class="testimonial-two__quote">
+                                        <span class="icon-chat"></span>
+                                    </div>
+                                </div>
+                                <p class="testimonial-two__text"><strong>Seamless Process & Quick Approval</strong><br>
+                                    The team made my Canada PR process so easy! Their expert guidance helped me get
+                                    my visa approved without any hassle.</p> </div>
+                        </div>
+                    </div>
+                    <!--Testimonial Two Single End-->
+                    <!--Testimonial Two Single Start-->
+                    <div class="item">
+                        <div class="testimonial-two__single">
+                            <div class="testimonial-two__inner">
+                                <div class="testimonial-two__img">
+                                    <img src="assets/images/testimonial/testimonial-2-2.jpg" alt="">
+                                    <div class="testimonial-two__shape-1">
+                                        <img src="assets/images/shapes/testimonial-two-shape-1.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="testimonial-two__client-details-and-quote">
+                                    <div class="testimonial-two__client-details">
+                                        <div class="testimonial-two__client-rate">
+                                            <span class="fa fa-star"></span>
+                                            <span class="fa fa-star"></span>
+                                            <span class="fa fa-star"></span>
+                                            <span class="fa fa-star"></span>
+                                            <span class="fa fa-star"></span>
+                                        </div>
+                                        <h4 class="testimonial-two__client-name"><a href="story-details.html">Kevin Martin
+        </a></h4>
+                                        <p class="testimonial-two__client-sub-title">Designer</p>
+                                    </div>
+                                    <div class="testimonial-two__quote">
+                                        <span class="icon-chat"></span>
+                                    </div>
+                                </div>
+                                <p class="testimonial-two__text"><strong>Reliable & Professional Immigration Service</strong><br>
+                                    I was worried about my study visa application, but their consultants handled everything perfectly. Highly recommended!</p></div>
+                        </div>
+                    </div>
+                    <!--Testimonial Two Single End-->
+                    <!--Testimonial Two Single Start-->
+                    <div class="item">
+                        <div class="testimonial-two__single">
+                            <div class="testimonial-two__inner">
+                                <div class="testimonial-two__img">
+                                    <img src="assets/images/testimonial/testimonial-2-3.jpg" alt="">
+                                    <div class="testimonial-two__shape-1">
+                                        <img src="assets/images/shapes/testimonial-two-shape-1.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="testimonial-two__client-details-and-quote">
+                                    <div class="testimonial-two__client-details">
+                                        <div class="testimonial-two__client-rate">
+                                            <span class="fa fa-star"></span>
+                                            <span class="fa fa-star"></span>
+                                            <span class="fa fa-star"></span>
+                                            <span class="fa fa-star"></span>
+                                            <span class="fa fa-star"></span>
+                                        </div>
+                                        <h4 class="testimonial-two__client-name"><a href="story-details.html">Ahmed K</a></h4>
+                                        <p class="testimonial-two__client-sub-title">Student</p>
+                                    </div>
+                                    <div class="testimonial-two__quote">
+                                        <span class="icon-chat"></span>
+                                    </div>
+                                </div>
+                                <p class="testimonial-two__text"><strong>Got My Express Entry Visa Faster Than Expected</strong><br>
+                                    Thanks to their professional approach, I received my Express Entry visa much
+                                    sooner than I expected. Truly the best in the business!</p></div>
+                        </div>
+                    </div>
+                    <!--Testimonial Two Single End-->
+                    <!--Testimonial Two Single Start-->
+                    <div class="item">
+                        <div class="testimonial-two__single">
+                            <div class="testimonial-two__inner">
+                                <div class="testimonial-two__img">
+                                    <img src="assets/images/testimonial/testimonial-2-4.jpg" alt="">
+                                    <div class="testimonial-two__shape-1">
+                                        <img src="assets/images/shapes/testimonial-two-shape-1.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="testimonial-two__client-details-and-quote">
+                                    <div class="testimonial-two__client-details">
+                                        <div class="testimonial-two__client-rate">
+                                            <span class="fa fa-star"></span>
+                                            <span class="fa fa-star"></span>
+                                            <span class="fa fa-star"></span>
+                                            <span class="fa fa-star"></span>
+                                            <span class="fa fa-star"></span>
+                                        </div>
+                                        <h4 class="testimonial-two__client-name"><a href="story-details.html">Alisha
+                                                Martin</a></h4>
+                                        <p class="testimonial-two__client-sub-title">Co Founder</p>
+                                    </div>
+                                    <div class="testimonial-two__quote">
+                                        <span class="icon-chat"></span>
+                                    </div>
+                                </div>
+                                <p class="testimonial-two__text">There are many variations of passages of available
+                                    but
+                                    the free majority have suffered alteration in some form believable.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Testimonial Two Single End-->
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--Testimonial Two End-->    
+       
+
+        <!--Site Footer Start-->
+        <div id="footer"></div>
+        <!--Site Footer End-->
+
+
+    </div><!-- /.page-wrapper -->
+
+
+    <div id="responsive">
+    </div>
+    <!-- /.mobile-nav__wrapper -->
+
+    <div class="search-popup">
+        <div class="search-popup__overlay search-toggler"></div>
+        <!-- /.search-popup__overlay -->
+        <div class="search-popup__content">
+            <form action="#">
+                <label for="search" class="sr-only">search here</label><!-- /.sr-only -->
+                <input type="text" id="search" placeholder="Search Here..." />
+                <button type="submit" aria-label="search submit" class="thm-btn">
+                    <i class="icon-magnifying-glass"></i>
+                </button>
+            </form>
+        </div>
+        <!-- /.search-popup__content -->
+    </div>
+    <!-- /.search-popup -->
+
+    <a href="#" data-target="html" class="scroll-to-target scroll-to-top"><i class="icon-right-arrow"></i></a>
+
+
+    <script src="assets/vendors/jquery/jquery-3.6.4.min.js"></script>
+    <script src="assets/vendors/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendors/jarallax/jarallax.min.js"></script>
+    <script src="assets/vendors/jquery-ajaxchimp/jquery.ajaxchimp.min.js"></script>
+    <script src="assets/vendors/jquery-appear/jquery.appear.min.js"></script>
+    <script src="assets/vendors/jquery-circle-progress/jquery.circle-progress.min.js"></script>
+    <script src="assets/vendors/jquery-magnific-popup/jquery.magnific-popup.min.js"></script>
+    <script src="assets/vendors/jquery-validate/jquery.validate.min.js"></script>
+    <script src="assets/vendors/nouislider/nouislider.min.js"></script>
+    <script src="assets/vendors/odometer/odometer.min.js"></script>
+    <script src="assets/vendors/swiper/swiper.min.js"></script>
+    <script src="assets/vendors/tiny-slider/tiny-slider.min.js"></script>
+    <script src="assets/vendors/wnumb/wNumb.min.js"></script>
+    <script src="assets/vendors/wow/wow.js"></script>
+    <script src="assets/vendors/isotope/isotope.js"></script>
+    <script src="assets/vendors/countdown/countdown.min.js"></script>
+    <script src="assets/vendors/owl-carousel/owl.carousel.min.js"></script>
+    <script src="assets/vendors/bxslider/jquery.bxslider.min.js"></script>
+    <script src="assets/vendors/bootstrap-select/js/bootstrap-select.min.js"></script>
+    <script src="assets/vendors/vegas/vegas.min.js"></script>
+    <script src="assets/vendors/jquery-ui/jquery-ui.js"></script>
+    <script src="assets/vendors/timepicker/timePicker.js"></script>
+    <script src="assets/vendors/circleType/jquery.circleType.js"></script>
+    <script src="assets/vendors/circleType/jquery.lettering.min.js"></script>
+    <script src="assets/vendors/language-switcher/jquery.polyglot.language.switcher.js"></script>
+
+
+
+
+    <!-- template js -->
+    <script src="assets/js/novostar.js"></script>
+</body>
+
+
+
+</html>
