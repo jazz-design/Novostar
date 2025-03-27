@@ -22,4 +22,6 @@ document.addEventListener("DOMContentLoaded", function () {
         document.getElementById("responsive").innerHTML = data;
     })
     .catch(error => console.error("Error loading footer:", error));
+
+    
 });
